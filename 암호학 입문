@@ -1,0 +1,23 @@
+암호학(ctyptography) : 기밀성+무결성+인증
+
+# 단방향 암호화(HASH) : 원래상태로 못 되돌림
+  사용처 : 무결성, 전자서명, 파일의 식별자, 사용자 비밀번호 저장, 비트코인 등 체굴할 때 작업증명
+  ex) https://dev.mysql.com/downloads/mysql/ 여기 들어가서 보면 다운로드 받는 곳에 MD5가 적혀있음
+      구글에 'hash md5 online file' 검색해서 들어감
+      다운받은 파일을 드레그 해서 올려놓으면 MD5 값이 나옴
+      비교해서 같은지 확인(같음)
+  
+  - HASH 알고리즘: CRC, MD5, RIPEMD160, SHA-1, SHA-256, SHA-512
+
+# 양방향 암호화
+  # 대칭키
+    알고리즘: Twofish, Serpent, Blowfish, CAST5, RC4, DES, AES 등등
+    ex) 구글에 aes encryption online 검색 -> aesencryption.net 들어감
+        위에 'My Secret' 적고 밑에 암호 설정해줌
+        -> 밑의 숫자는 클 수록 좋지만 용량을 많이 차지함(일단 작은걸로 함)
+        -> 오른쪽 밑에 Encrypt 누르면 밑에서 암호화 됨
+        -> 복사해서 다시 위에 붙혀넣고 설정한 암호 적어서 ->
+        오른쪽 밑에 있는 Decrypt 누르면 밑에 My Secret 나옴
+  
+  # 비대칭키(공개키)
+  
